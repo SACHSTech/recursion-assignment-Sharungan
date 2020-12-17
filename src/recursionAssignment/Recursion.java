@@ -14,13 +14,13 @@ public class Recursion{
       //return 0 if the number divided by 10 doesn't have a remainder of 7 and add the number divided by 10 this will continue until n=0 and then the all the returns will be added together
     }
   }
-  //public static String endX(String str){
-    //if(str.substring(0,1).equals("")){
-      //return endX(str);
-    //}else if(str.substring(0,1).equals("x")){
-     // return endX(str.substring(1)) + "x";
-    //}else{
-      //return endX(str);
-   // }
-  //}
+  public static String endX(String str){
+    if(str.substring(0,1).equals("")){
+      return endX(str);
+    }else if(str.substring(0,1).equals("x")){
+      return endX(str.substring(1)) + "x";
+    }else{
+      return endX(str);
+    }
+  }
 }
