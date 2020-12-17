@@ -15,12 +15,15 @@ public class Recursion{
     }
   }
   public static String endX(String str){
-    if(str.substring(0,1).equals("")){
-      return endX(str);
+    if(str.equals("")){
+      return "";
+      //Checks if string is blank, if it is return blank
     }else if(str.substring(0,1).equals("x")){
       return endX(str.substring(1)) + "x";
+      //Checks if first letter is x, if it is then it returns the next letter plus x
     }else{
-      return endX(str);
+      return str.substring(0,1) + endX(str.substring(1));
+      //checks if none of the above conditions are being met, if not then takes the first letter and adds it the to the next letter behind it (Ex: ax would be xa)
     }
   }
 }

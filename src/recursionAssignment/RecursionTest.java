@@ -18,19 +18,39 @@ public class RecursionTest{
       // assertTrue(TESTBOOLEAN);
       assertEquals(2, Recursion.count7(717));
     }
+    /**
+     * An initial test
+     */
+    @Test
     public void Test2(){
       assertEquals(1, Recursion.count7(7));
     }
+    /**
+     * An initial test
+     */
+    @Test
     public void Test3(){
       assertEquals(0, Recursion.count7(123));
     }
+    /**
+     * An initial test
+     */
+    @Test
     public void Test4(){
-      assertEquals("xxre",Recursion.endX("rexx"));
+      assertEquals("rexx",Recursion.endX("xxre"));
     }
+    /**
+     * An initial test
+     */
+    @Test
     public void Test5(){
-      assertEquals("xxhixx",Recursion.endX("hixxxx"));
+      assertEquals("hixxxx",Recursion.endX("xxhixx"));
     }
+    /**
+     * An initial test
+     */
+    @Test
     public void Test6(){
-      assertEquals("xhixhix",Recursion.endX("hihixxx"));
+      assertEquals("hihixxx",Recursion.endX("xhixhix"));
   }
 }
