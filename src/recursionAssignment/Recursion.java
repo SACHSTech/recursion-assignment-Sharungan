@@ -33,10 +33,13 @@ public class Recursion{
 
     if(Str.length()<=1){
       return Str;
+      //If the length of the Str is less or equal to one then return the Str
+    } else if(Str.charAt(intLength) == Str.charAt(intLength-1)){
+      return stringClean(Str.substring(0,intLength));
+      //If the last letter and the second last letter are the same then return Str without the last letter 
     }else{
-      return "oops";
+      return stringClean(Str.substring(0,intLength-1))+Str.charAt(intLength);
+      
     }
-
-
   }
 }
