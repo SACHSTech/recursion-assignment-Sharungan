@@ -39,7 +39,7 @@ public class Recursion{
       //If the last letter and the second last letter are the same then return Str without the last letter 
     }else{
       return stringClean(Str.substring(0,intLength))+Str.charAt(intLength);
-      //If none of the above conditions are met then return Str without its second last letter and add the last letter to the new Str (Eg. hello = hel + 0).
+      //If none of the above conditions are met then return Str with all the letters before the second last letter and add the last letter to the new Str (Eg. hello = hel + 0).
     }
   }
 }
