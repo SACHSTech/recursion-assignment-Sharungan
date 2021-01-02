@@ -53,4 +53,25 @@ public class RecursionTest{
     public void Test6(){
       assertEquals("hihixxx",Recursion.endX("xhixhix"));
   }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test7(){
+      assertEquals("yza",Recursion.stringClean("yyzzza"));
+  }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test8(){
+      assertEquals("abcd",Recursion.stringClean("abbbcdd"));
+  }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test9(){
+      assertEquals("Helo",Recursion.stringClean("Hello"));
+  }
 }

@@ -26,4 +26,17 @@ public class Recursion{
       //checks if none of the above conditions are being met, if not then takes the first letter and adds it the to the next letter behind it (Ex: ax would be xa)
     }
   }
+  public static String stringClean(String Str){
+    //Variables
+    int intLength;
+    intLength = Str.length() -1; 
+
+    if(Str.length()<=1){
+      return Str;
+    }else{
+      return "oops";
+    }
+
+
+  }
 }
