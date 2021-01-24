@@ -1,34 +1,77 @@
 package recursionAssignment;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Before;
-import org.junit.jupiter.api.After;
+import org.junit.Before;
+import org.junit.After;
 
 import recursionAssignment.Recursion;
 
 public class RecursionTest{
-    
-    @Before
-    public void beforeTest(){
-      // some steps to perform before tests are run
-    }
     
     /**
      * An initial test
      */
     @Test
     public void Test1(){
-        // make assertion statement(s)
-        // assertEquals(EXPECTEDVALUE, TESTVALUE);
-        // assertTrue(TESTBOOLEAN);
+      // make assertion statement(s)
+      // assertEquals(EXPECTEDVALUE, TESTVALUE);
+      // assertTrue(TESTBOOLEAN);
+      assertEquals(2, Recursion.count7(717));
     }
-    
-    // add more tests
-    
-    @After
-    public void afterTest(){
-      // some steps to perform after tests are run
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test2(){
+      assertEquals(1, Recursion.count7(7));
     }
-    
-    
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test3(){
+      assertEquals(0, Recursion.count7(123));
+    }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test4(){
+      assertEquals("rexx",Recursion.endX("xxre"));
+    }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test5(){
+      assertEquals("hixxxx",Recursion.endX("xxhixx"));
+    }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test6(){
+      assertEquals("hihixxx",Recursion.endX("xhixhix"));
+  }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test7(){
+      assertEquals("yza",Recursion.stringClean("yyzzza"));
+  }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test8(){
+      assertEquals("abcd",Recursion.stringClean("abbbcdd"));
+  }
+    /**
+     * An initial test
+     */
+    @Test
+    public void Test9(){
+      assertEquals("Helo",Recursion.stringClean("Hello"));
+  }
 }
